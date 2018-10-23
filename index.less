@@ -1,0 +1,192 @@
+@gray-1: #AFAFAF;
+@gray-2: #898989;
+@gray-3: #f1f1f1;
+@gray-4: #EBEBEB;
+
+// teal indicates an add
+@added: #009688;
+// indigo indicates a change
+@changed: #3F51B5;
+
+atom-text-editor .cursor {
+  // Color of the writing cursor
+  border-color: black;
+}
+
+.tree-view .tree-view-root {
+  // Increase tree view spacing
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+atom-text-editor {
+  // Use tree view color
+  background: transparent;
+  // Separates the tree view from the code
+  border-right: 1px solid @gray-4;
+}
+
+.tree-view {
+  // Tree view background
+  background-color: white;
+}
+
+atom-dock .tab-bar {
+  // Hide open folder above file tree
+  display: none;
+}
+
+.atom-dock-resize-handle.atom-dock-resize-handle-resizable.left {
+  // Draggable area to resize the tree view
+  background: transparent;
+}
+
+atom-workspace-axis .tab.active {
+  // Currently open tab
+  background: transparent;
+  font-weight: 600;
+}
+
+.tree-view::-webkit-scrollbar {
+  // Hide scrollbar in tree view
+  display: none;
+}
+
+.status-bar {
+  // Hide the status bar at the bottom
+  display: none;
+}
+
+atom-workspace {
+  // View when nothing is open
+  background-color: transparent;
+  // Color of tab label and open file text when nothing open
+  color: @gray-2;
+}
+
+.atom-dock-toggle-button .atom-dock-toggle-button-inner {
+  // Tree view cannot be hidden
+  display: none;
+}
+
+.tab-bar {
+  // No specific background for tabs
+  background: transparent;
+  // Separates tab-bar from code
+  border-bottom: 1px solid @gray-4;
+}
+
+.atom-dock-mask {
+  // Draggable are only visible when hovering
+  background: white;
+  // Separates tree and code
+  border-right: 1px solid @gray-4;
+}
+
+atom-text-editor .line-number .icon-right {
+  // No collapsing parts of code
+  display: none;
+}
+
+atom-text-editor .line-number {
+  // Add some space between numbers and code
+  padding-right: 10px;
+}
+
+.atom-dock-resize-handle {
+  // Resize handle between code and tree only visible when hovering
+  background: white;
+}
+
+.list-group .selected::before, .list-tree .selected::before {
+  // Remove background when top-level folder selected
+  background: transparent;
+}
+
+.status-added {
+  // Color when staged for add
+  color: @added;
+}
+
+.status-modified {
+  // Color when staged for modification
+  color: @changed;
+}
+
+.status-ignored {
+  // Files ignored in .gitignore
+  color: @gray-1;
+}
+
+atom-text-editor .gutter .line-number.cursor-line {
+  // Highlight the current line number
+  background: transparent;
+  font-weight: bold;
+  color: @gray-2;
+}
+
+.editor .selection .region {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.editor.is-focused  .selection .region {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * Styling the tabs.
+ */
+.tab {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.tab-bar .tab .close-icon {
+  top: 10px;
+}
+
+.tab-bar .tab.modified:not(:hover) .close-icon {
+  border: 2px solid @gray-2;
+}
+
+.tooltip {
+  backgroud: @gray-2;
+}
+
+.list-group .icon::before, .list-tree .icon::before {
+  display: none;
+}
+
+.list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+  margin-right: 2px;
+  top: 0;
+}
+
+.list-item.selected,
+.list-nested-item.selected {
+  // Highlight elements in tree view when active
+  font-weight: bold;
+}
+
+.entry.list-item:not(.selected),
+.list-nested-item:not(.selected) {
+  // Only highlight top-level item not contents
+  font-weight: 400;
+}
+
+.tool-panel, .panel, atom-panel {
+  // Search dialogue
+  background: white;
+  // Separate search and code
+  border-top: 1px solid @gray-4;
+}
+
+atom-panel.modal {
+  border: 1px solid @gray-4;
+  background: white;
+}
+
+.FuzzyFinderResult.selected {
+  font-weight: bold;
+}

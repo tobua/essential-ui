@@ -1,0 +1,21 @@
+{
+  "name": "essential-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "A simple UI theme for the atom code editor.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "keywords": [
+    "ui",
+    "theme",
+    "simple",
+    "essential",
+    "atom"
+  ],
+  "repository": "https://github.com/naminho/essential-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
