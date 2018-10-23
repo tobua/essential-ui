@@ -6,14 +6,8 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "keywords": [
-    "ui",
-    "theme",
-    "simple",
-    "essential",
-    "atom"
-  ],
   "repository": "https://github.com/naminho/essential-ui",
+  "keywords": ["ui", "theme", "simple", "essential", "atom"],
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
