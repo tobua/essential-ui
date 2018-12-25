@@ -1,8 +1,14 @@
 @import "styles/colors.less";
+@import "styles/markdown.less";
 
 atom-text-editor .cursor {
   // Color of the writing cursor
   border-color: black;
+}
+
+atom-workspace {
+  // Changes color of tab labels.
+  color: @black !important;
 }
 
 .tree-view .tree-view-root {
@@ -195,6 +201,7 @@ atom-text-editor .gutter .line-number.cursor-line {
 .list-nested-item:not(.selected) {
   // Only highlight top-level item not contents
   font-weight: 400;
+  color: @black;
 }
 
 .tool-panel, .panel, atom-panel {

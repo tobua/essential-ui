@@ -1,0 +1,33 @@
+.markdown-preview.markdown-preview {
+  color: black;
+  background-color: white;
+
+  a {
+    color: black;
+  }
+
+  code {
+    color: black;
+    background-color: lightgray;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: black;
+  }
+}
+
+// Code blocks
+.markdown-preview:not([data-use-github-style]) atom-text-editor {
+  background-color: @gray-5;
+  color: @black;
+}
+
+// Inline code
+.markdown-preview.markdown-preview code {
+  background-color: @gray-5 !important;
+}
+
+.icon-markdown::before {
+  // Remove file preview icon to align tabs.
+  display: none;
+}
